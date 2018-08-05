@@ -1,4 +1,4 @@
-# std::fs and std::path"
+# std::fs and std::path
 
 `std::fs` and `std::path` are essential when you want to do operations that involve manipulating files and directories. I used these when writing a test as a part of my PR for Diesel. Since functions in `std::fs` accept `AsRef<Path>` we have to wrap our file path as a `Path` first. The code below initializes a new `Path`.
 
